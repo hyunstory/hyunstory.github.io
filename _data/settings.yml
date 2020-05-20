@@ -7,6 +7,8 @@ disqus:
 google-ID: 'G-SBE8NQX7KQ'
 
 menu: 
+  - name: About
+    link: /about
   - name: Research
     submenu:
       - name: MicroBam
@@ -17,8 +19,6 @@ menu:
     link: /
   - name: Tags
     link: /tags
-  - name: About
-    link: /about
   - name: Follow me
     submenu:
       - name: GitHub
