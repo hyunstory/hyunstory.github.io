@@ -14,6 +14,15 @@
   <meta property="og:title" content="Hyun's Story" />
   <meta name="twitter:title" content="Hyun's Story">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE8NQX7KQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SBE8NQX7KQ');
+</script>
 
   
 	  <meta name="description" content="This is Hyun's blog" />
@@ -182,6 +191,36 @@
 </div>
 
 <div class="list-group">
+	 
+	<div class="list-group-item">
+	<a href="/posts/test-post/">
+		<h4 class="list-group-item-heading">Test Post</h4>
+		<h6 class="list-group-item-heading">May 21,
+			2020 | (Last Update : May 21, 2020)</h6></a>
+		
+		<a class="label label-default" href="/tags/#messaging">messaging</a>
+		
+				
+		<img
+			alt="Test Post"
+			src="/assets/images//posts/test-post/top.jpg" class="img-responsive">
+		
+		<p>
+    When using Apache Camel with Quarkus as of today, we are limited number of Camel connectors. One important one being
+    the Apache Kafka connector.
+    The Kafka connector provided through the Smallrye Kafka Extension is available for Quarkus though. So in this
+    article, I will show how to
+    wire Smallrye Kafka connector and Camel together.
+    We will also be using the camel-servlet component to reuse the undertow http endpoint provided by Quarkus and to
+    spice things up a little we will use the XML DSL of Camel.
+    All of this will be natively compiled in the end.
+
+
+
+</p>
+		<a href="/posts/test-post/">Read more...</a>
+
+	</div>
 	 
 	<div class="list-group-item">
 	<a href="/posts/quarkus-kafka-camel-servlet-wiring-it-together/">
@@ -553,7 +592,7 @@ s.setAttribute('data-timestamp', +new Date());
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'G-SBE8NQX7KQ', 'auto');
+  ga('create', '', 'auto');
   ga('send', 'pageview');
 
 </script>
