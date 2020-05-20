@@ -12,6 +12,15 @@
   <meta property="og:title" content="{{page.title}}" />
   <meta name="twitter:title" content="{{page.title}}">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SBE8NQX7KQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SBE8NQX7KQ');
+</script>
 
   {% if page.description %}
 	  <meta name="description" content="{{page.description}}" />
