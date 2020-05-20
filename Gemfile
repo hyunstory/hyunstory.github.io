@@ -10,7 +10,9 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem 'jekyll',"~> 4.0.0"
+
+gem 'i18n', "0.9.5"
+gem 'jekyll',"~> 3.5"
 gem 'rexml', "3.2.3"
 gem 'jekyll-admin', group: :jekyll_plugins 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.

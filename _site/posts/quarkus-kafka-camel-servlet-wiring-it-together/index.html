@@ -386,7 +386,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
 <p>Now lets go ahead and create a consumer with the @Incoming annotation. We will need to inject a Camel
     ProducerTemplate instance into the consumer so that the message can be forwarded to our Camel direct endpoint</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.context.ApplicationScoped</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.apache.camel.ProducerTemplate</span><span class="o">;</span>
@@ -411,7 +411,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
     We need to register this class for reflection so that it can work once compiled to native code.
 </p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">javax.enterprise.context.ApplicationScoped</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>
@@ -450,7 +450,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
     The @Produces annotation provides the Camel producer template to the CDI context.
 </p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.event.Observes</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.inject.Produces</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>
@@ -655,9 +655,7 @@ quarkus-kafka-camel-servlet_1  | 2019-07-05 13:12:58,027 INFO  [receive-kafka-ev
 		</ul>
 	
 
-	
-	
-<div id="disqus_thread"></div>
+	<div id="disqus_thread"></div>
 <script>
 
 /**
@@ -665,28 +663,29 @@ quarkus-kafka-camel-servlet_1  | 2019-07-05 13:12:58,027 INFO  [receive-kafka-ev
 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
 
 var disqus_config = function () {
-this.page.url = "https://alainpham.github.io/posts/quarkus-kafka-camel-servlet-wiring-it-together/";  // Replace PAGE_URL with your page's canonical URL variable
-//this.page.identifier = "/posts/quarkus-kafka-camel-servlet-wiring-it-together"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+this.page.url = "http://0.0.0.0:4000/posts/quarkus-kafka-camel-servlet-wiring-it-together/";  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = "/posts/quarkus-kafka-camel-servlet-wiring-it-together"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
+
+var disqus_shortname = 'hyunstory';
 
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
-s.src = '//apham.disqus.com/embed.js';
+s.src = 'https://hyunstory.disqus.com/embed.js';
 s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
- 
+                            
 	</div>
 	<footer class="footer">
 	<ul class="footer-links">
-		<li><a href="http://github.com/alainpham"> <i
+		<li><a href="http://github.com/hyunstory"> <i
 				class="fa fa-inverse fa-github fa-3x"></i></a></li>
-		<li><a href="http://www.linkedin.com/in/alainpham"> <i
+		<li><a href="https://www.linkedin.com/in/hyunseung-lee-3400a51a5/"> <i
 				class="fa fa-inverse fa-linkedin-square fa-3x"></i></a></li>
-		<li><a href="https://twitter.com/koint"> <i
-				class="fa fa-inverse fa-twitter fa-3x"></i></a></li>
+
 	</ul>
 </footer>
 	<script>
@@ -699,5 +698,6 @@ s.setAttribute('data-timestamp', +new Date());
   ga('send', 'pageview');
 
 </script>
+<script id="dsq-count-scr" src="//hyunstory.disqus.com/count.js" async></script>
 </body>
 </html>
