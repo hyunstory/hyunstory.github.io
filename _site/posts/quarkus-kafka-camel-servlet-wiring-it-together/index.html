@@ -92,6 +92,8 @@
     spice things up a little we will use the XML DSL of Camel.
     All of this will be natively compiled in the end.
 
+
+
 ",
   
 "url": "http://0.0.0.0:4000/posts/quarkus-kafka-camel-servlet-wiring-it-together/"}</script>
@@ -393,7 +395,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
 <p>Now lets go ahead and create a consumer with the @Incoming annotation. We will need to inject a Camel
     ProducerTemplate instance into the consumer so that the message can be forwarded to our Camel direct endpoint</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.context.ApplicationScoped</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">org.apache.camel.ProducerTemplate</span><span class="o">;</span>
@@ -418,7 +420,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
     We need to register this class for reflection so that it can work once compiled to native code.
 </p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">javax.enterprise.context.ApplicationScoped</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>
@@ -457,7 +459,7 @@ mp.messaging.outgoing.out-events.value.serializer=org.apache.kafka.common.serial
     The @Produces annotation provides the Camel producer template to the CDI context.
 </p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">agilabs</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">agilabs</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.event.Observes</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.enterprise.inject.Produces</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">javax.inject.Inject</span><span class="o">;</span>

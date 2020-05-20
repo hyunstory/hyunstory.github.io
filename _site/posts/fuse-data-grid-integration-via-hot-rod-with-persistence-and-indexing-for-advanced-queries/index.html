@@ -80,6 +80,8 @@ This article will show how to make both technologies work together using the cam
 We will go through the setup of a JBoss Data Grid server with persistence and see how to use it in a JBoss Fuse application through the remote Hot Rod client.
 Furthermore we will see how to take advantage of Protocol buffers and Lucene to index data and perform content based queries.
 
+
+
 ",
   
 "url": "http://0.0.0.0:4000/posts/fuse-data-grid-integration-via-hot-rod-with-persistence-and-indexing-for-advanced-queries/"}</script>
@@ -454,7 +456,7 @@ Note that the version should match the version of the Data Grid Server.
 
 <p>Create a class and annotate it so that it is indexed by Data Grid. To enable indexing through Hot Rod, POJOs need to serialized as protocol buffers</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">techlab.model</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">techlab</span><span class="o">.</span><span class="na">model</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">java.io.Serializable</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.util.Date</span><span class="o">;</span>
@@ -513,7 +515,7 @@ Note that the version should match the version of the Data Grid Server.
 <p>Write a CacheManager factory.
 	Note that protobuf schemas can be generated from the annotated class and then registered to the Data Grid Server on the reserved in metadata cache</p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">techlab.factory</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">techlab</span><span class="o">.</span><span class="na">factory</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">java.io.IOException</span><span class="o">;</span>
 
@@ -665,7 +667,7 @@ Note that the version should match the version of the Data Grid Server.
 <p>Create classes that generate Data Grid Queries. Note that these classes are pretty generic as they use reflection and are suitable to any data model.
 </p>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">techlab.dg</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">techlab</span><span class="o">.</span><span class="na">dg</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">java.beans.BeanInfo</span><span class="o">;</span>
 <span class="kn">import</span> <span class="nn">java.beans.IntrospectionException</span><span class="o">;</span>
@@ -731,7 +733,7 @@ Note that the version should match the version of the Data Grid Server.
 	<span class="o">}</span>
 <span class="o">}</span></code></pre></figure>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="nn">techlab.dg</span><span class="o">;</span>
+<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="kn">package</span> <span class="n">techlab</span><span class="o">.</span><span class="na">dg</span><span class="o">;</span>
 
 <span class="kn">import</span> <span class="nn">java.beans.IntrospectionException</span><span class="o">;</span>
 
