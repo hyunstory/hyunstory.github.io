@@ -1,10 +1,10 @@
 # Change 'comments' to true for Disqus comments
 disqus:
   comments: true
-  disqus_shortname: 'apham'
+  disqus_shortname: 'hyunstory'
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-ID: 'UA-91332049-1'
+google-ID: 'G-SBE8NQX7KQ'
 
 menu: 
   - name: Research
