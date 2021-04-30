@@ -13,7 +13,7 @@ ruby RUBY_VERSION
 
 gem 'i18n', "0.9.5"
 gem 'jekyll',"~> 3.5"
-gem 'rexml', "3.2.3"
+gem 'rexml', "3.2.5"
 gem 'jekyll-admin', group: :jekyll_plugins 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima","2.0"
